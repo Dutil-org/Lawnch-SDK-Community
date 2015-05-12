@@ -1,0 +1,6 @@
+[submodule "api"]
+	path = api
+	url = https://github.com/Dutil-org/Lawnch-API.git
+[submodule "plugins/examples"]
+	path = plugins/examples
+	url = https://github.com/Dutil-org/Lawnch-Plugins-Examples.git
