@@ -1,0 +1,25 @@
+
+  buildscript {
+      repositories {
+          maven { url 'http://repo.spring.io/libs-snapshot' }
+          mavenLocal()
+          mavenCentral()
+          jcenter()
+      }
+      dependencies {
+          classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.1.RELEASE")
+      }
+  }
+
+subprojects {
+
+  apply plugin: 'java'
+  apply plugin: 'eclipse'
+
+  task wrapper(type: Wrapper) {
+      gradleVersion = '2.1'
+  }
+
+  dependencies {
+  }
+}
